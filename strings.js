@@ -32,12 +32,29 @@ function replaceSubstring (S,S1,S2){
 }
 
 //5=============================================================================
-function countWordsWithSameLetters(sentence){
-  let sum = []
-  let newstr = sentence.split("")
-  for(const word of newstr){
-    if(word[0] === word[word.length]){
-      sum++
+function countWordsWithSameLetters(sentence) {
+  let sum = 0;
+  let words = sentence.split('/\s+/'); 
+
+  for (const word of words) {
+    if (word.length > 0 && word[0] === word[word.length - 1]) {
+      sum++;
     }
   }
+
+  return sum;
 }
+//6==============================================================================
+function countWordsWithA(sentence) {
+  let words = sentence.split(/\s+/)
+  let sum = 0
+
+  for (const word of words) {
+    if (word.includes('a') || word.includes('A')) {
+      sum++;
+    }
+  }
+
+  return sum;
+}
+//================================================================================
