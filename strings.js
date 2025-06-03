@@ -58,3 +58,6 @@ function countWordsWithA(sentence) {
   return sum;
 }
 //================================================================================
+function normalizeSpaces (sentence){
+
+}
