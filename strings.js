@@ -64,7 +64,7 @@ function countWordsWithA(sentence) {
 // .length
 //7==============================================================================
 function normalizeSpaces (sentence){
-  return text.replace(/\s+/g, ' ')
+  return text.replace(/\s+/g, ' ');
 }
 //8==============================================================================
 function extractFileName (fullFileName) { f
@@ -75,6 +75,6 @@ function encryptSentence (sentence) {
   const newstr = sentence.split('');
   const evenChar = newstr.filter((char,ind) => (ind +1) % 2 === 0 );
   const oddChar = newstr.filter((char,ind) => (ind +1) % 2 !== 0 ).reverse();
+}
   return `${evenChar.join('')}${oddChar.join('')}`;
 
-}
