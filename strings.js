@@ -34,7 +34,7 @@ function replaceSubstring (S,S1,S2){
 //5=============================================================================
 function countWordsWithSameLetters(sentence) {
   let sum = 0;
-  let words = sentence.split('/\s+/'); 
+  let words = sentence.toLowercase().split('/\s+/'); 
 
   for (const word of words) {
     if (word.length > 0 && word[0] === word[word.length - 1]) {
@@ -57,7 +57,24 @@ function countWordsWithA(sentence) {
 
   return sum;
 }
-//================================================================================
+//filter 
+// function countWordsWithA = (sentence) => sentence
+// .split('')
+// .filter(word => word.includes('a') || word.includes('A'))
+// .length
+//7==============================================================================
 function normalizeSpaces (sentence){
+  return text.replace(/\s+/g, ' ')
+}
+//8==============================================================================
+function extractFileName (fullFileName) { f
+  return fullFileName.split('/').at(-1).split('.')[0];
+}
+//9==============================================================================
+function encryptSentence (sentence) {
+  const newstr = sentence.split('');
+  const evenChar = newstr.filter((char,ind) => (ind +1) % 2 === 0 );
+  const oddChar = newstr.filter((char,ind) => (ind +1) % 2 !== 0 ).reverse();
+  return `${evenChar.join('')}${oddChar.join('')}`;
 
 }
