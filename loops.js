@@ -30,7 +30,7 @@ const power = (a,n) =>{
 // const calculateAverage = () =>
 //     (nums.reduce((sum,num) => sum += num, 0) / nums.length) || [];
 //======================================================================================
-// function  getEvenNumbers2 (arr) {
+// function  getEvenNumbers2 (arr) {6
 //     return arr.filter(num => num % 2 === 0);
 // }
 //======================================================================================

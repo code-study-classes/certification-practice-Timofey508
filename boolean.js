@@ -22,3 +22,12 @@ function checkBetweenNumbers (a,b,c){
 function checkOddThreeDigitNumber (number){
     return (number > 99) && (number % 2 !== 0)
 }
+//7==============================================================
+function checkUniqueDigits (number) {
+    const num = number.toString().split('')
+        
+
+}
+//8==============================================================
+//9==============================================================
+//10=============================================================
